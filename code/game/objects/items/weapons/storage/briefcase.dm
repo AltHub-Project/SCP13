@@ -131,3 +131,25 @@
 		/obj/item/ammo_magazine/scp/ak/big,
 		/obj/item/ammo_magazine/box/a762
 	)
+
+/obj/item/weapon/storage/briefcase/donator/ancel
+	startswith = list(
+		/obj/item/ammo_magazine/scp/svd,
+		/obj/item/ammo_magazine/scp/svd,
+		/obj/item/ammo_magazine/scp/svd,
+		/obj/item/ammo_magazine/scp/svd,
+		/obj/item/ammo_magazine/box/a762,
+		/obj/item/weapon/gun/projectile/automatic/scp/donor/svd,
+		/obj/item/clothing/head/helmet/scp/donor3,
+		/obj/item/clothing/suit/armor/vest/scp/donor3
+	)
+	can_hold = list(
+		/obj/item/ammo_magazine/scp/svd,
+		/obj/item/ammo_magazine/scp/svd,
+		/obj/item/ammo_magazine/scp/svd,
+		/obj/item/ammo_magazine/scp/svd,
+		/obj/item/ammo_magazine/box/a762,
+		/obj/item/weapon/gun/projectile/automatic/scp/donor/svd,
+		/obj/item/clothing/head/helmet/scp/donor3,
+		/obj/item/clothing/suit/armor/vest/scp/donor3
+	)

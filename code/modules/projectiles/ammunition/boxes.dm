@@ -466,3 +466,14 @@
 	icon_state = "7.62x39mm2"
 	max_ammo = 45
 	multiple_sprites = 1
+
+/obj/item/ammo_magazine/scp/svd
+	name = "magazine (7.62)"
+	icon_state = "7.62x54s"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = "a762"
+	matter = list(DEFAULT_WALL_MATERIAL = 1500)
+	ammo_type = /obj/item/ammo_casing/a762
+	max_ammo = 10
+	multiple_sprites = 1

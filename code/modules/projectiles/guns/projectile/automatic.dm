@@ -527,3 +527,36 @@
 	else
 		icon_state = "rpk-empty"
 	return
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/svd
+	name = "SVD"
+	desc = "Самозарядная снайперская винтовка, разработанная в 1957—1963 годах группой конструкторов под руководством Евгения Драгунова."
+	icon_state = "svd"
+	item_state = "svd"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK
+	caliber = "a762"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 5)
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/scp/svd
+	allowed_magazines = /obj/item/ammo_magazine/scp/svd
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1,    fire_delay=0,    move_delay=null, use_launcher=null, one_hand_penalty=5, burst_accuracy=null, dispersion=null)
+		)
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/svd/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "svd"
+	else
+		icon_state = "svd-empty"
+	return
+
+/obj/item/weapon/gun/projectile/automatic/scp/donor/svd/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2.0)
